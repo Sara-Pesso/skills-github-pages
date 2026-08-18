@@ -21,7 +21,8 @@ That's it! Keepin' it stupid simple.
 <figcaption><b>Note:</b> the variable "exclusions" is simply a Python dictionary of the form {giver:[exclusion1, exclusion2, ...]}</figcaption>
 
 
-```
+
+```python
 def secret_santa_generator(exclusions):
     names = [key for key, _ in exclusions.items()]
     n = len(names)
@@ -41,8 +42,6 @@ def secret_santa_generator(exclusions):
                 pairings_str.append(f"{key} DREW {value}")
             return pairings_str
 ```
-
-</figure>
 
 Eventually, I turned this into a usable desktop application, courtesy of the tkinter Python package.
 

@@ -27,7 +27,6 @@ That's it! Keepin' it stupid simple.
 def secret_santa_generator(exclusions):
     names = [key for key, _ in exclusions.items()]
     n = len(names)
-
     while True:
         random_order = random.sample(range(0,n), n)
         pairings = {names[i]: names[random_order[i]] for i in range(0, n)}

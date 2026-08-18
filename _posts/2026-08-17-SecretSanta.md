@@ -21,7 +21,7 @@ That's it! Keepin' it stupid simple.
 <figcaption><b>Note:</b> the variable "exclusions" is simply a Python dictionary of the form {giver:[exclusion1, exclusion2, ...]}</figcaption>
 
 
-```python
+```
 def secret_santa_generator(exclusions):
     names = [key for key, _ in exclusions.items()]
     n = len(names)

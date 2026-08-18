@@ -17,9 +17,9 @@ The method wasn't elegant, but it did work. Basically, it loops through each fam
 
 That's it! Keepin' it stupid simple.
 
-<figure>
+<!-- <figure>
 <figcaption><b>Figure 1:</b> Baby's First Secret Santa "Algorithm"</figcaption>
-<figcaption><b>Note:</b> the variable "exclusions" is simply a Python dictionary of the form {giver:[exclusion1, exclusion2, ...]}</figcaption>
+<figcaption><b>Note:</b> the variable "exclusions" is simply a Python dictionary of the form {giver:[exclusion1, exclusion2, ...]}</figcaption> -->
 
 
 

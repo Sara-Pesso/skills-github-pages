@@ -24,6 +24,7 @@ That's it! Keepin' it stupid simple.
 
 
 ```python
+
 def secret_santa_generator(exclusions):
     names = [key for key, _ in exclusions.items()]
     n = len(names)

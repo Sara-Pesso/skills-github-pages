@@ -2,6 +2,7 @@
 title: "A Solution to the Secret Santa Problem"
 date: 2026-08-17
 ---
+
 My husband being one of eight children (half of which are married with kids) means that getting a gift for everyone in the family each Christmas isn't financially feasiable. To remedy this, my MIL began the tradiition of using a Secret Santa approach to gift giving: each member of the family is (randomly) assigned to give one other person a gift. This way, we know everyone is giving to one other person, and recieving from one other person.
 
 Of course, each family members' spouse shouldn't be drawn as their giftee-- obviously, whether or not a husband draws their wife in the family Secret Santa, they are still going to get their wife a Christmas present lest they incur her well-deserved ire. Also, we want to make sure no one has drawn the same name two years in a row. These problems arose for my MIL in the free Secret Santa name drawing applications available online-- they don't allow for these types of exclusions.
@@ -41,7 +42,7 @@ def secret_santa_generator(exclusions):
             for key, value in pairings.items():
                 pairings_str.append(f"{key} DREW {value}")
             return pairings_str
-```
+
 
 Eventually, I turned this into a usable desktop application, courtesy of the tkinter Python package.
 

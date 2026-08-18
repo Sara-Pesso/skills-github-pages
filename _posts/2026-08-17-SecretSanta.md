@@ -25,23 +25,23 @@ That's it! Keepin' it stupid simple.
 
 ```python
 
-def secret_santa_generator(exclusions):
-    names = [key for key, _ in exclusions.items()]
-    n = len(names)
-    while True:
-        random_order = random.sample(range(0,n), n)
-        pairings = {names[i]: names[random_order[i]] for i in range(0, n)}
-        exclusions_check = True
-        for giver, receiver in pairings.items():
-            if giver == receiver or receiver in exclusions.get(giver):
-                exclusions_check = False
-                break
+    def secret_santa_generator(exclusions):
+        names = [key for key, _ in exclusions.items()]
+        n = len(names)
+        while True:
+            random_order = random.sample(range(0,n), n)
+            pairings = {names[i]: names[random_order[i]] for i in range(0, n)}
+            exclusions_check = True
+            for giver, receiver in pairings.items():
+                if giver == receiver or receiver in exclusions.get(giver):
+                    exclusions_check = False
+                    break
 
-        if exclusions_check:
-            pairings_str = []
-            for key, value in pairings.items():
-                pairings_str.append(f"{key} DREW {value}")
-            return pairings_str
+            if exclusions_check:
+                pairings_str = []
+                for key, value in pairings.items():
+                    pairings_str.append(f"{key} DREW {value}")
+                return pairings_str
 
 
 Eventually, I turned this into a usable desktop application, courtesy of the tkinter Python package.
